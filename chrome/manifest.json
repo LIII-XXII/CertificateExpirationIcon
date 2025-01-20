@@ -1,0 +1,24 @@
+// Manifest file (manifest.json)
+{
+  "manifest_version": 3,
+  "name": "Certificate Expiration Tracker",
+  "version": "1.0",
+  "description": "Shows days remaining until SSL certificate expiration and changes the icon if expiration is imminent.",
+  "permissions": ["alarms", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/ok_16.png",
+      "48": "icons/ok_48.png",
+      "128": "icons/ok_128.png"
+    },
+    "default_title": "Certificate Expiration Tracker"
+  },
+  "icons": {
+    "16": "icons/ok_16.png",
+    "48": "icons/ok_48.png",
+    "128": "icons/ok_128.png"
+  }
+}
